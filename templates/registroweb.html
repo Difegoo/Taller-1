@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios</title>
+</head>
+<body>
+    <div class="container"> <!--Centrar en la pantalla-->
+        <h1>FORMULARIO DE REGISTRO DE DATOS</h1>
+
+        <form method="POST" action="{{url_for('indato')}}" >
+            <P1><label for="nombre"> Nombre : </label> <br></P1>
+            <input type="text" name="nombre" placeholder="Nombre" required> <br><br>
+            <P1><label for="number"> Edad : </label> <br></P1>
+            <input type="number" name="edad" placeholder="Edad" required> <br><br>
+            <P1><label for="nombre"> Genero : </label> <br></P1>
+            <input type="text" name="genero" placeholder="Nombre" required> <br><br>
+            <P1><label for="number"> Telefono : </label> <br></P1>
+            <input type="text" name="telefono" placeholder="Edad" required> <br><br>
+            
+
+            
+            <button type="submit" class="btn btn-primary">Enviar Informacion</button>
+            
+            <style type="text/css">
+                h1 {
+                    color: white;
+                    font-size: 45px;
+                    text-align: center;
+                }
+                
+                html {
+                    background-color: blue;
+                }
+                p1 {
+                    color: red;
+                    font-size: 19px;
+                    
+                }
+
+            </style>
+        
+        </form>
+
+    </div>
+</body>
+</html>
